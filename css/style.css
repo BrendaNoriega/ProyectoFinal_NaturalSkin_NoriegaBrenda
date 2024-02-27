@@ -1,0 +1,1327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100;
+    background-color: EBE5DB;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: 000000;
+}
+
+.promocionesBancarias{
+    background-color: 383230;   
+}
+
+.promocionesBancarias P{
+    font-size: 18px;
+    text-align: center;
+    color: EDE1D2;
+    margin: 0;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #EDE1D2;
+    box-shadow: 0px 0px 25px 0px #000000;
+    padding: auto;
+    z-index: 1000000000;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0;
+}
+.navbar .links{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.navbar .links .submenu{
+    position: absolute;
+    width: 300px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #EDE1D2;
+    box-shadow: 0px 20px 45px #412F26;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+.navbar .links li:hover .submenu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 18px;
+
+}
+.navbar .links .submenu li{
+    margin: 0;
+    width: 100%;
+}
+.navbar .links .submenu li a{
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+.navbar .linksItems{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.linksItems a:hover{
+    color: #CE8523;
+}
+.links a:hover{
+    color: #CE8523;
+}
+.navbar .menuDeHamburguesa{
+    color: #412F26;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: #EDE1D2;
+    opacity: 90%;
+    backdrop-filter: blur(15px);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 250px;
+}
+.dropdown_menu li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    background-image: url(../recursos/imagenes/BannerImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+.contenedor-banner{
+    color: ffffff;
+    padding-top: 300px;
+    padding-left: 100px;
+
+}
+
+.contenedor-banner span{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.contenedor-banner h1{
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 680;
+    letter-spacing: 4px;
+}
+
+.contenedor-banner p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.contenedor-banner a{
+    background-color: EDE1D2;
+    color: 412F26;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.tonicoALaVenta {
+    margin: 20;
+    display: flex;
+}
+
+.productoALaVenta1 .imagenProductoALaVenta1 img{
+    padding: 20 20;
+    border-radius: 5%;
+    width: 1000px;
+    height: 800px;
+}
+
+.productoALaVenta1 .indicacionesDelProductoALaVenta1{
+    padding: 300px 150px 300px 150px;
+    text-align: center;
+    
+}
+
+.productoALaVenta1 .indicacionesDelProductoALaVenta1 h2{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: 383230;
+}
+
+.productoALaVenta1 .indicacionesDelProductoALaVenta1 p{
+    color: 383230;
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.productoALaVenta1 .indicacionesDelProductoALaVenta1 a{
+    background-color: 412F26;
+    color: EDE1D2;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.apartadoSobreNosotros .contenedorConocenos{
+    background-image: url(../recursos/imagenes/Sección-SobreNosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 400px;
+    padding-left: 650px;
+    width: 100%;
+    height: 100vh;
+}
+
+.apartadoSobreNosotros .contenedorConocenos h2{
+    font-size: 60px;
+    font-weight: 680;
+    letter-spacing: 4px;
+    color: EBE5DB;
+    margin-bottom: 60px;
+}
+
+.apartadoSobreNosotros .contenedorConocenos a{
+    background-color: EDE1D2;
+    color: 412F26;
+    padding: 10px 30px;
+    border-radius: 10px;
+       
+}
+
+.carbonActivadoALaVenta{
+    margin: 20;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.productoALaVenta2 .imagenProductoALaVenta2 img{
+    padding: 20 20;
+    border-radius: 5%;
+    width: 1000px;
+    height: 800px;
+}
+
+.productoALaVenta2 .indicacionesDelProductoALaVenta2{
+    padding: 300px 150px 300px 150px;
+    text-align: center;
+    
+}
+
+.productoALaVenta2 .indicacionesDelProductoALaVenta2 h2{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: 383230;
+}
+
+.productoALaVenta2 .indicacionesDelProductoALaVenta2 p{
+    color: 383230;
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.productoALaVenta2 .indicacionesDelProductoALaVenta2 a{
+    background-color: 412F26;
+    color: EDE1D2;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.promociónDeInstagram{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.promociónDeInstagram h2{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: 383230;
+}
+
+.promociónDeInstagram a{
+    background-color: 412F26;
+    color: EDE1D2;
+    display: block;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    padding: 10 40;
+}
+
+.imagenesDeinstagram{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenesDeinstagram img{
+    width: 400px;
+    height: 600px;
+    border-radius: 5%;
+    margin: 20 90;
+    display: block;
+    object-fit: cover;
+}
+
+.contenedorFooter{
+    background-color: #412F26 ;
+    padding: 40 60;
+    align-items:center;
+    display: flex;
+    justify-content:space-around;
+}
+
+footer{
+    margin-top: auto;
+}
+
+footer .contenedorFooter .footer-contenedor{
+    color:#EDE1D2 ;
+    display: inline;
+}
+
+.contenedorFooter .footer-contenedor a{
+    color:#EDE1D2 ;
+}
+
+.contenedorFooter .footer-contenedor a:hover{
+    color:#CE8523 ;
+}
+
+.footer-contenedor .formularioParaNewsletter{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-contenedor .formularioParaNewsletter input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: ffffff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+
+.footer-contenedor .formularioParaNewsletter .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #EDE1D2;
+}
+
+.footer-contenedor .formularioParaNewsletter .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #EDE1D2;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.botonIrHaciaArriba{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #c9b09a;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    box-shadow: 3px 3px 3px 3px #1E1611;
+}
+
+.botonIrHaciaArriba a i{
+    padding-top: 15px;
+}
+
+.encabezadoSobreNosotros .apartadoIdentificadorSobreNosotros{
+    padding-top: 120px;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.encabezadoSobreNosotros p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+    padding: 40px 500px 40px 500px;
+}
+
+.sobreNosotros .nuestraHistoria .imagenSobreNosotros img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.sobreNosotros .nuestraHistoria .historiaSobreLaMarca{
+    text-align: center;
+    margin: 100px 40px;
+    padding: 100px;
+    background-color: #412F26;
+    border-radius: 20px;
+}
+
+.sobreNosotros .nuestraHistoria .historiaSobreLaMarca h2{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #EDE1D2;
+    padding: 20px 0px;
+}
+
+.sobreNosotros .nuestraHistoria .historiaSobreLaMarca p{
+    color: #EDE1D2;
+    margin-bottom: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 0 40;
+}
+
+.visionYMisionDeLaMarca{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 40px;
+}
+
+.visionYMisionDeLaMarca .misionDeNaturalSkin{
+    color: #412F26;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    padding: 100px 100px;
+    box-shadow: 5px 5px 5px 3px #1E1611;
+}
+
+.visionYMisionDeLaMarca .misionDeNaturalSkin h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 40px 10px;
+}
+
+.visionYMisionDeLaMarca .misionDeNaturalSkin p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 40px 10px;
+
+}
+
+.visionYMisionDeLaMarca img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px 3px #1E1611;
+}
+
+.visionYMisionDeLaMarca .visionDeNaturalSkin{
+    color: #412F26;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    padding: 100px 100px;
+    box-shadow: 5px 5px 5px 3px #1E1611;
+}
+
+.visionYMisionDeLaMarca .visionDeNaturalSkin h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 40px 10px;
+}
+
+.visionYMisionDeLaMarca .visionDeNaturalSkin p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 40px 10px;
+
+}
+
+.bannerFinalSobreNosotros img{
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.bannerFinalSobreNosotros p{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #EDE1D2;
+    background-color:#c9b09a;
+    padding: 60px;
+    margin-top: 25px;
+}
+
+.apartadoContacto{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 100px 280px;
+}
+
+.apartadoContacto .imagenDeContacto img{
+    margin-left: 80px;
+    border-radius: 5%;
+    width: 600px;
+    height: 800px;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px 3px #1E1611;
+}
+
+.apartadoContacto .formularioDeContacto{
+    padding-top: 200px;
+    margin-right: 600px;
+    text-align: initial;
+}
+
+.apartadoContacto .formularioDeContacto .formularioRellenarDatos{
+    margin: 30 100;
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.apartadoContacto .formularioDeContacto .formularioRellenarDatos input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #412F26;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+
+.apartadoContacto .formularioDeContacto .formularioRellenarDatos .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #412F26;
+}
+
+.apartadoContacto .formularioDeContacto .formularioRellenarDatos .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #412F26
+}
+
+.formularioDeContacto a{
+    padding-left: 60px;
+}
+
+.formularioDeContacto .btn-Enviar a{
+    color: #EDE1D2;
+    background-color: #412F26;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.formularioDeContacto .btn-Enviar{
+    margin-left: 470px;
+}
+
+.apartadoIdentificadorSobreNosotros{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: 383230;
+    margin-left: 40px;
+    padding-top: 100px;
+}
+
+.encabezadoDeContactos .apartadoIdentificadorContacto{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: 383230;
+    margin-left: 40px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.encabezadoDeContactos p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+    padding: 40px 200px 100px 200px;
+}
+
+.encabezadoDeContactos .aclaracionEnContactos p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+    padding: 40px 200px 40px 200px;
+    background-color: #c9b09a;
+    color: #EDE1D2;
+}
+
+
+.apartadoIdentificadorProductos{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: 383230;
+    margin-left: 40px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.contenedorDelBuscador{
+    margin: 40 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorDelBuscador .buscador{
+    width: 100%;
+    max-width: 700px;
+    height: 60px;
+    background: #412F26;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(100%);
+}
+
+.contenedorDelBuscador .buscador input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24 20;
+    font-size: 20px;
+    color: #EDE1D2;
+}
+
+::placeholder{
+    color: #EDE1D2;
+}
+
+.buscador i{
+    align-items: center;
+}
+
+.buscador button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: none;
+    cursor: pointer;
+}
+
+.productos{
+    display: flex;
+}
+
+.contenedorDeProducto img{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.listaDeProductos{
+    margin: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedorDeProducto{
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+.contenedorDeProducto:hover{
+    box-shadow: 0px 0px 5px 0px #1E1611;
+    border-radius: 20px;
+}
+
+.contenedorDeProducto div{
+    background-color: #c9b09a ;
+    border-radius:0px 0px 20px 20px;
+    color: #EDE1D2;
+}
+
+.contenedorDeProducto .informaciónDelProducto{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.informaciónDelProducto>p:first-child{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.informaciónDelProducto .precio{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.informaciónDelProducto .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.informaciónDelProducto button{
+    background-color: #EDE1D2;
+    color: #412F26;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    align-items: center;
+}
+
+.productoSeleccionado{
+    display: flex;
+}
+
+.productoSeleccionado img{
+    width: 1000px;
+    height: 1200px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin: 100px 40px 40px 40px;
+}
+
+.productoSeleccionado .informaciónDelProductoSeleccionado{
+    padding-top: 150px;
+    margin: 40px;
+}
+
+.productoSeleccionado .informaciónDelProductoSeleccionado h1{
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    margin: 20px 0px;
+}
+
+.productoSeleccionado .informaciónDelProductoSeleccionado p{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+}
+
+.productoSeleccionado .informaciónDelProductoSeleccionado h2{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+    opacity: 70%;
+}
+
+.selectorDeCantidad{
+    width: 300px;
+    height: 60px;
+    background: #412F26;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(100%);
+    margin: 20px 0px;
+}
+
+.productoSeleccionado .informaciónDelProductoSeleccionado input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: #EDE1D2;
+    text-align: center;
+}
+
+.productoSeleccionado .informaciónDelProductoSeleccionado button{
+    background-color: #412F26;
+    color: #EDE1D2;
+    width: 600px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.productoSeleccionado .informaciónDelProductoSeleccionado h4{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+
+}
+
+.productoSeleccionado .informaciónDelProductoSeleccionado ul{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+}
+
+/* MEDIA QUERY - MOBILE*/
+
+@media (max-width: 480px){
+    
+    .promocionesBancarias P{
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+    .navbar .links,
+    .navbar .linksItems{
+        display: none;
+    }
+    .navbar .logo a{
+        font-size: 18px;
+    }
+    .navbar .menuDeHamburguesa{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .banner{
+        background-image: url(../recursos/imagenes/Masajeador-Accesorio.jpg);
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+        text-align: center;
+    }
+    .contenedor-banner{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 50px 40px 50px;
+    }
+    .contenedor-banner span{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .contenedor-banner h1{
+        margin-bottom: 4px;
+        font-size: 28px;
+    }
+    .contenedor-banner p{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .contenedor-banner a{
+        padding: 10px 30px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    .tonicoALaVenta {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .productoALaVenta1 .imagenProductoALaVenta1 img{
+        padding: 10px;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .productoALaVenta1 .indicacionesDelProductoALaVenta1{
+        padding: 40px 20px 40px 20px; 
+    }
+    
+    .productoALaVenta1 .indicacionesDelProductoALaVenta1 h2{
+        font-size: 20px;
+    }
+    
+    .productoALaVenta1 .indicacionesDelProductoALaVenta1 p{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    
+    .productoALaVenta1 .indicacionesDelProductoALaVenta1 a{
+        background-color: 412F26;
+        color: EDE1D2;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+    .apartadoSobreNosotros .contenedorConocenos{
+        background-image: url(../recursos/imagenes/Mision-Vision-NaturalSkin.jpg);
+        text-align: center;
+        padding: 400px 0px 50px 0px;
+        height: 70vh;
+    }
+    
+    .apartadoSobreNosotros .contenedorConocenos h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #412F26;
+        opacity: 80%;
+    }
+    
+    .apartadoSobreNosotros .contenedorConocenos a{
+        padding: 10px 30px;
+        border-radius: 10px;
+           
+    }
+    .carbonActivadoALaVenta{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .productoALaVenta2 .imagenProductoALaVenta2 img{
+        padding: 10px;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .productoALaVenta2 .indicacionesDelProductoALaVenta2{
+        padding: 40px 20px 40px 20px; 
+        
+    }
+    
+    .productoALaVenta2 .indicacionesDelProductoALaVenta2 h2{
+        font-size: 20px;;
+    }
+    
+    .productoALaVenta2 .indicacionesDelProductoALaVenta2 p{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    
+    .productoALaVenta2 .indicacionesDelProductoALaVenta2 a{
+        background-color: 412F26;
+        color: EDE1D2;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+    .promociónDeInstagram{
+        padding-top: 10px;
+    }
+    
+    .promociónDeInstagram h2{
+        font-size: 20px;
+    }
+    
+    .promociónDeInstagram a{
+        font-size: 16px;
+        padding: 5 20;
+    }
+    .imagenesDeinstagram img{
+        width: 100px;
+        height: 200px;
+        margin: 10 10;
+    }
+    .contenedorFooter{
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contenedorFooter .footer-contenedor{
+        align-items: center;
+        margin: 20px;
+    }
+    .botonIrHaciaArriba{
+        width: 40px;
+        height: 40px;
+        bottom: 50px;
+        right: 35px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    
+    .botonIrHaciaArriba a i{
+        padding-top: 12px;
+    }
+    .apartadoIdentificadorProductos{
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin-left: 8px;
+        padding-top: 160px;
+    }
+    
+    .contenedorDelBuscador{
+        margin: 20 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contenedorDelBuscador .buscador{
+        width: 100%;
+        max-width: 700px;
+        height: 50px;
+        padding: 5px 10px;
+    }
+    
+    .contenedorDelBuscador .buscador input{
+        padding: 12 20;
+        font-size: 16px;
+    }
+    .buscador i{
+        font-size: 20px;
+    }
+    
+    .buscador button{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .contenedorDeProducto{
+        display: flex;
+        justify-content: center;
+    }
+    .contenedorDeProducto:hover{
+        box-shadow: none;
+    }
+    .informaciónDelProducto{
+        width: 320px;
+    }
+    .informaciónDelProducto .precio span{
+        font-size: 16px;
+    }
+    .productoSeleccionado{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .productoSeleccionado img{
+        width: 100%;
+        height: 70vh;
+        margin: 160px 40px 0px 0px;
+        padding: 10px;
+    }
+    
+    .productoSeleccionado .informaciónDelProductoSeleccionado{
+        padding-top: 0px;
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .informaciónDelProductoSeleccionado{
+        align-items: center;
+    }
+    
+    .productoSeleccionado .informaciónDelProductoSeleccionado h1{
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin: 10px 0px;
+    }
+    
+    .productoSeleccionado .informaciónDelProductoSeleccionado p{
+        font-size: 18px;
+        margin: 10px 0px;
+    }
+    
+    .productoSeleccionado .informaciónDelProductoSeleccionado h2{
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    
+    .selectorDeCantidad{
+        width: 300px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        margin: 10px 18px;
+    }
+    
+    .productoSeleccionado .informaciónDelProductoSeleccionado input{
+        font-size: 16px;
+    }
+    
+    .productoSeleccionado .informaciónDelProductoSeleccionado button{
+        width: 350px;
+        height: 60px;
+        font-size: 18px;
+    }
+    
+    .productoSeleccionado .informaciónDelProductoSeleccionado h4{
+        font-size: 18px;
+        margin: 10px 0px;
+    
+    }
+    
+    .productoSeleccionado .informaciónDelProductoSeleccionado ul{
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    .encabezadoSobreNosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .encabezadoSobreNosotros .apartadoIdentificadorSobreNosotros{
+        padding: 160px 40px 0px 0px;
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .encabezadoSobreNosotros p{
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-align: center;
+        padding: 20px 20px;
+    }
+    
+    .sobreNosotros .nuestraHistoria .imagenSobreNosotros img {
+        border-radius: 3%;
+        padding: 0px 0px;
+        height: 600px;
+    }
+    
+    .sobreNosotros .nuestraHistoria .historiaSobreLaMarca{
+        margin: 40px 20px;
+        padding: 20px;
+    }
+    
+    .sobreNosotros .nuestraHistoria .historiaSobreLaMarca h2{
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 0px;
+    }
+    
+    .sobreNosotros .nuestraHistoria .historiaSobreLaMarca p{
+        margin-bottom: 20px;
+        font-size: 16px;
+        padding: 0 20;
+    }
+    
+    .visionYMisionDeLaMarca{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 20px;
+    }
+    
+    .visionYMisionDeLaMarca .misionDeNaturalSkin{
+        height: 330px;
+        width: 330px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        margin: 20px 0px;
+    }
+    
+    .visionYMisionDeLaMarca .misionDeNaturalSkin h2{
+        font-size: 30px;
+        font-weight: 700;
+        margin: 40px 10px;
+    }
+    
+    .visionYMisionDeLaMarca .misionDeNaturalSkin p{
+        font-size: 20px;
+    
+    }
+    
+    .visionYMisionDeLaMarca img{
+        height: 330px;
+        width: 330px;
+        margin: 20px 0px;
+    }
+    
+    .visionYMisionDeLaMarca .visionDeNaturalSkin{
+        height: 330px;
+        width: 330px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        margin: 20px 0px;
+    }
+    
+    .visionYMisionDeLaMarca .visionDeNaturalSkin h2{
+        font-size: 30px;
+        font-weight: 700;
+        margin: 40px 10px;
+    }
+    
+    .visionYMisionDeLaMarca .visionDeNaturalSkin p{
+        font-size: 20px;
+    
+    }
+    
+    .bannerFinalSobreNosotros img{
+        padding: 0px 0px;
+        height: 600px;
+    }
+    
+    .bannerFinalSobreNosotros p{
+        font-size: 24px;
+        padding: 20px;
+        margin-top: 26px;
+    }
+    .encabezadoDeContactos .apartadoIdentificadorContacto{
+        padding: 160px 40px 0px 0px;
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .encabezadoDeContactos p{
+        font-size: 18px;
+        padding: 20px;
+    }
+    
+    .encabezadoDeContactos .aclaracionEnContactos p{
+        font-size: 18px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .apartadoContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagenDeContacto{
+        margin-right: 280px;
+    }
+    .apartadoContacto .imagenDeContacto img{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        width: 330px;
+        height: 600px;
+        
+    }
+    .apartadoContacto .formularioDeContacto{
+        padding-top: 40px;
+        margin-right: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .apartadoContacto .formularioDeContacto .formularioRellenarDatos{
+        margin: 15px 50px;
+        width: 100%;
+        height: 50px;
+        max-width: 300px;
+    }
+    
+    .apartadoContacto .formularioDeContacto .formularioRellenarDatos input{
+        padding-top: 10px;
+    }
+    .formularioDeContacto a{
+        padding-left: 0px;
+        margin: 10px 0px;
+    }
+    
+    .formularioDeContacto .btn-Enviar a{
+        padding: 10px 100px;
+    }
+    
+    .formularioDeContacto .btn-Enviar{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
