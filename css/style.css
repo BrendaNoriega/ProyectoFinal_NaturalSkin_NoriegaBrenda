@@ -856,6 +856,71 @@ footer .contenedorFooter .footer-contenedor{
     margin: 20px 0px;
 }
 
+.encabezadoDeMiPerfil .apartadoIdentificadorMiPerfil{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: 383230;
+    margin-left: 40px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.apartadoIdentificadorMiPerfil{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: 383230;
+    margin-left: 40px;
+    padding-top: 150px;
+}
+
+.miPerfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonMiPerfil{
+    background-color: #f6f5ec;
+    width: 1000px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.botonMiPerfil a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.botonMiPerfil i{
+    font-size: 36px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonMiPerfil .informacionBoton{
+    display: inline-block;
+    padding: 10px 150px;
+}
+
+.botonMiPerfil .informacionBoton p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.botonMiPerfil .informacionBoton span{
+    font-size: 18px;
+    font-weight: 300;
+}
+
 /* MEDIA QUERY - MOBILE*/
 
 @media (max-width: 480px){
@@ -1323,5 +1388,46 @@ footer .contenedorFooter .footer-contenedor{
     .formularioDeContacto .btn-Enviar{
         margin-left: 0px;
         margin-top: 20px;
+    }
+    .encabezadoDeMiPerfil .apartadoIdentificadorMiPerfil{
+        padding: 160px 40px 20px 0px;
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .apartadoIdentificadorMiPerfil{
+        font-size: 28px;
+        margin-left: 40px;
+        padding-top: 150px;
+    }
+    .botonMiPerfil{
+        width: 100%;
+    }
+    .botonMiPerfil a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding-left: 20px;
+    }
+    
+    .botonMiPerfil i{
+        font-size: 24px;
+        padding: 5px 10px;
+    }
+    
+    .botonMiPerfil .informacionBoton{
+        display: inline-block;
+        padding: 10px 40px;
+    }
+    
+    .botonMiPerfil .informacionBoton p{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .botonMiPerfil .informacionBoton span{
+        font-size: 16px;
+        font-weight: 300;
     }
 }
