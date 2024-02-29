@@ -423,6 +423,8 @@ footer .contenedorFooter .footer-contenedor{
     padding: 100px;
     background-color: #412F26;
     border-radius: 20px;
+    box-shadow:  20px 20px 39px #8f8e89,
+                -20px -20px 39px #ffffff;
 }
 
 .sobreNosotros .nuestraHistoria .historiaSobreLaMarca h2{
@@ -451,9 +453,10 @@ footer .contenedorFooter .footer-contenedor{
     color: #412F26;
     height: 500px;
     width: 500px;
-    border-radius: 10px;
     padding: 100px 100px;
-    box-shadow: 5px 5px 5px 3px #1E1611;
+    border-radius: 20px;
+    box-shadow:  20px 20px 39px #8f8e89,
+                -20px -20px 39px #ffffff;
 }
 
 .visionYMisionDeLaMarca .misionDeNaturalSkin h2{
@@ -475,17 +478,20 @@ footer .contenedorFooter .footer-contenedor{
     height: 500px;
     width: 500px;
     object-fit: cover;
-    border-radius: 3%;
-    box-shadow: 5px 5px 5px 3px #1E1611;
+    border-radius: 10%;
+    border-radius: 20px;
+    box-shadow:  20px 20px 39px #8f8e89,
+                -20px -20px 39px #ffffff;
 }
 
 .visionYMisionDeLaMarca .visionDeNaturalSkin{
     color: #412F26;
     height: 500px;
     width: 500px;
-    border-radius: 10px;
     padding: 100px 100px;
-    box-shadow: 5px 5px 5px 3px #1E1611;
+    border-radius: 20px;
+    box-shadow:  20px 20px 39px #8f8e89,
+                -20px -20px 39px #ffffff;
 }
 
 .visionYMisionDeLaMarca .visionDeNaturalSkin h2{
@@ -527,12 +533,15 @@ footer .contenedorFooter .footer-contenedor{
 }
 
 .apartadoContacto .imagenDeContacto img{
+    margin-top: 20px;
     margin-left: 80px;
     border-radius: 5%;
     width: 600px;
     height: 800px;
     object-fit: cover;
-    box-shadow: 5px 5px 5px 3px #1E1611;
+    border-radius: 54px;
+    box-shadow:  20px 20px 39px #8f8e89,
+                -20px -20px 39px #ffffff;
 }
 
 .apartadoContacto .formularioDeContacto{
@@ -717,8 +726,9 @@ footer .contenedorFooter .footer-contenedor{
 }
 
 .contenedorDeProducto:hover{
-    box-shadow: 0px 0px 5px 0px #1E1611;
     border-radius: 20px;
+    box-shadow:  20px 20px 39px #8f8e89,
+             -20px -20px 39px #ffffff;
 }
 
 .contenedorDeProducto div{
@@ -883,13 +893,15 @@ footer .contenedorFooter .footer-contenedor{
 }
 
 .botonMiPerfil{
-    background-color: #f6f5ec;
     width: 1000px;
-    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    border-radius: 20px;
+    background: #f6f5ec;
+    box-shadow:  20px 20px 39px #8f8e89,
+             -20px -20px 39px #ffffff;
 }
 .botonMiPerfil a{
     display: flex;
@@ -1351,7 +1363,7 @@ footer .contenedorFooter .footer-contenedor{
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-top: auto;
+        margin-top: 10px;
         margin-left: auto;
         margin-bottom: auto;
         width: 330px;
@@ -1360,7 +1372,7 @@ footer .contenedorFooter .footer-contenedor{
     }
     .apartadoContacto .formularioDeContacto{
         padding-top: 40px;
-        margin-right: 300px;
+        margin-right: 285px;
         display: flex;
         flex-direction: column;
         align-items: center;
