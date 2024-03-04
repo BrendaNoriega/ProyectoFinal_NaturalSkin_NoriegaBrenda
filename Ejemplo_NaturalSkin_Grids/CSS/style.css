@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px auto 400px;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+    column-gap: 20px;
+    row-gap: 0px;
+    background-color: #EDE1D2;
+
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: 000000;
+}
+
+.promocionesBancarias{
+    background-color: 383230;   
+}
+
+.promocionesBancarias P{
+    font-size: 18px;
+    text-align: center;
+    color: EDE1D2;
+    margin: 0;
+}
+header{
+    grid-area: header;
+    position: fixed;
+    width: 100%;
+    background-color: #EDE1D2;
+    box-shadow: 0px 0px 25px 0px #000000;
+    padding: auto;
+    z-index: 1000000000;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10 20;
+    align-items: center;
+    justify-items: space-between;
+}
+.navbar .logo a{
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0;
+}
+.navbar .links{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.navbar .links .submenu{
+    position: absolute;
+    width: 300px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #EDE1D2;
+    box-shadow: 0px 20px 45px #412F26;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+.navbar .links li:hover .submenu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 18px;
+
+}
+.navbar .links .submenu li{
+    margin: 0;
+    width: 100%;
+}
+.navbar .links .submenu li a{
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+.navbar .linksItems{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.linksItems a:hover{
+    color: #CE8523;
+}
+.links a:hover{
+    color: #CE8523;
+}
+.navbar .menuDeHamburguesa{
+    color: #412F26;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: #EDE1D2;
+    opacity: 90%;
+    backdrop-filter: blur(15px);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 250px;
+}
+.dropdown_menu li{
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+main{
+    grid-area: main;
+}
+.banner{
+    background-image: url(../recursos/BannerImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+.contenedor-banner{
+    color: ffffff;
+    padding-top: 300px;
+    padding-left: 100px;
+
+}
+
+.contenedor-banner span{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.contenedor-banner h1{
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 680;
+    letter-spacing: 4px;
+}
+
+.contenedor-banner p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.contenedor-banner a{
+    background-color: EDE1D2;
+    color: 412F26;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.tonicoALaVenta {
+    margin: 20;
+    display: flex;
+}
+
+.productoALaVenta1 .imagenProductoALaVenta1 img{
+    padding: 20 20;
+    border-radius: 5%;
+    width: 1000px;
+    height: 800px;
+}
+
+.productoALaVenta1 .indicacionesDelProductoALaVenta1{
+    padding: 300px 150px 300px 150px;
+    text-align: center;
+    
+}
+
+.productoALaVenta1 .indicacionesDelProductoALaVenta1 h2{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: 383230;
+}
+
+.productoALaVenta1 .indicacionesDelProductoALaVenta1 p{
+    color: 383230;
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.productoALaVenta1 .indicacionesDelProductoALaVenta1 a{
+    background-color: 412F26;
+    color: EDE1D2;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.apartadoSobreNosotros .contenedorConocenos{
+    background-image: url(../recursos/Sección-SobreNosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 400px;
+    padding-left: 650px;
+    width: 100%;
+    height: 100vh;
+}
+
+.apartadoSobreNosotros .contenedorConocenos h2{
+    font-size: 60px;
+    font-weight: 680;
+    letter-spacing: 4px;
+    color: EBE5DB;
+    margin-bottom: 60px;
+}
+
+.apartadoSobreNosotros .contenedorConocenos a{
+    background-color: EDE1D2;
+    color: 412F26;
+    padding: 10px 30px;
+    border-radius: 10px;
+       
+}
+
+.carbonActivadoALaVenta{
+    margin: 20;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.productoALaVenta2 .imagenProductoALaVenta2 img{
+    padding: 20 20;
+    border-radius: 5%;
+    width: 1000px;
+    height: 800px;
+}
+
+.productoALaVenta2 .indicacionesDelProductoALaVenta2{
+    padding: 300px 150px 300px 150px;
+    text-align: center;
+    
+}
+
+.productoALaVenta2 .indicacionesDelProductoALaVenta2 h2{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: 383230;
+}
+
+.productoALaVenta2 .indicacionesDelProductoALaVenta2 p{
+    color: 383230;
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.productoALaVenta2 .indicacionesDelProductoALaVenta2 a{
+    background-color: 412F26;
+    color: EDE1D2;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.promociónDeInstagram{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.promociónDeInstagram h2{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: 383230;
+}
+
+.promociónDeInstagram a{
+    background-color: 412F26;
+    color: EDE1D2;
+    display: block;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    padding: 10 40;
+}
+
+.imagenesDeinstagram{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenesDeinstagram img{
+    width: 400px;
+    height: 600px;
+    border-radius: 5%;
+    margin: 20 90;
+    display: block;
+    object-fit: cover;
+}
+
+.contenedorFooter{
+    background-color: #412F26 ;
+    padding: 40 60;
+    align-items:center;
+    display: flex;
+    justify-content:space-around;
+}
+
+footer{
+    grid-area: footer;
+    margin-top: auto;
+}
+
+footer .contenedorFooter .footer-contenedor{
+    color:#EDE1D2 ;
+    display: inline;
+}
+
+.contenedorFooter .footer-contenedor a{
+    color:#EDE1D2 ;
+}
+
+.contenedorFooter .footer-contenedor a:hover{
+    color:#CE8523 ;
+}
+
+.footer-contenedor .formularioParaNewsletter{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-contenedor .formularioParaNewsletter input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: ffffff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+
+.footer-contenedor .formularioParaNewsletter .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #EDE1D2;
+}
+
+.footer-contenedor .formularioParaNewsletter .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #EDE1D2;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.botonIrHaciaArriba{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #c9b09a;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    box-shadow: 3px 3px 3px 3px #1E1611;
+}
+
+.botonIrHaciaArriba a i{
+    padding-top: 15px;
+}
