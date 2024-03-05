@@ -732,13 +732,13 @@ footer .contenedorFooter .footer-contenedor{
 }
 
 .contenedorDeProducto div{
-    background-color: #c9b09a ;
+    background-color: #412F26 ;
     border-radius:0px 0px 20px 20px;
     color: #EDE1D2;
 }
 
 .contenedorDeProducto .informaciónDelProducto{
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -765,7 +765,7 @@ footer .contenedorFooter .footer-contenedor{
 .informaciónDelProducto button{
     background-color: #EDE1D2;
     color: #412F26;
-    width: 100px;
+    width: 250px;
     height: 35px;
     border-radius: 10px;
     border: none;
