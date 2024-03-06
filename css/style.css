@@ -935,7 +935,7 @@ footer .contenedorFooter .footer-contenedor{
 
 /* MEDIA QUERY - MOBILE*/
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     
     .promocionesBancarias P{
         font-size: 12px;
