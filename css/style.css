@@ -1091,6 +1091,7 @@ footer .contenedorFooter .footer-contenedor{
         align-items:center;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 100%;
     }
     .contenedorFooter .footer-contenedor{
