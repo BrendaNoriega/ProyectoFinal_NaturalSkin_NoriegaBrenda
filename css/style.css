@@ -302,7 +302,6 @@ header{
     display: flex;
     justify-content: center;
 }
-
 .imagenesDeinstagram img{
     width: 400px;
     height: 600px;
@@ -311,7 +310,6 @@ header{
     display: block;
     object-fit: cover;
 }
-
 .contenedorFooter{
     background-color: #412F26 ;
     padding: 40 60;
@@ -1086,12 +1084,18 @@ footer .contenedorFooter .footer-contenedor{
     
     .promociónDeInstagram a{
         font-size: 16px;
-        padding: 5 20;
+        padding: 5px 20px;
+    }
+    .imagenesDeinstagram {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .imagenesDeinstagram img{
-        width: 100px;
-        height: 200px;
-        margin: 10 10;
+        width: 100%;
+        height: 600px;
+        margin: 10px 10px;
+        padding: 20px;
     }
     .contenedorFooter{
         align-items:center;
@@ -1244,7 +1248,7 @@ footer .contenedorFooter .footer-contenedor{
         justify-content: center;
     }
     .encabezadoSobreNosotros .apartadoIdentificadorSobreNosotros{
-        padding: 160px 40px 0px 0px;
+        padding: 160px 0px 0px 0px;
         text-align: center;
         font-size: 28px;
     }
