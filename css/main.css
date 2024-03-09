@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100;
+  background-color: #EBE5DB;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #EBE5DB;
+  box-shadow: 0px 0px 25px 0px #000000;
+  padding: auto;
+  z-index: 1000000000;
+}
+header .promocionesBancarias {
+  background-color: #412F26;
+}
+header .promocionesBancarias p {
+  font-size: 18px;
+  text-align: center;
+  color: #EBE5DB;
+  margin: 0px;
+}
+header .navbar {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .logo a {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 0px;
+}
+header .navbar .links {
+  display: flex;
+  gap: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+header .navbar .links a:hover {
+  color: #CE8523;
+}
+header .navbar .links li:hover {
+  z-index: 99;
+  opacity: 1;
+  margin-top: 18px;
+}
+header .navbar .links li:hover .submenu {
+  position: absolute;
+  width: 300px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #EBE5DB;
+  box-shadow: 0px 20px 45px #412F26;
+  margin-top: -50px;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease 0.5s;
+}
+header .navbar .links li:hover .submenu li {
+  margin: 0;
+  width: 100%;
+}
+header .navbar .links li:hover .submenu li a {
+  padding: 15px 20px;
+  display: inline-block;
+  width: 100%;
+}
+header .navbar .linksItems {
+  display: flex;
+  gap: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+header .navbar .linksItems a:hover {
+  color: #CE8523;
+}
+header .navbar .menuDeHamburguesa {
+  color: #412F26;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+header .dropdown_menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  background: rgba(237, 225, 210, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header .dropdown_menu li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .dropdown_menu .open {
+  height: 300px;
+}
+
+footer {
+  margin-top: auto;
+}
+footer .contenedorFooter .footer-contenedor {
+  color: #EBE5DB;
+  display: inline;
+}
+footer .contenedorFooter .footer-contenedor a {
+  color: #EBE5DB;
+}
+footer .contenedorFooter .footer-contenedor a:hover {
+  color: #CE8523;
+}
+footer .contenedorFooter .footer-contenedor .formularioParaNewsletter {
+  width: 100%;
+  height: 50px;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+footer .contenedorFooter .footer-contenedor .formularioParaNewsletter input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #ffffff;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+}
+footer .contenedorFooter .footer-contenedor .formularioParaNewsletter .lbl-nombre {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #EBE5DB;
+}
+footer .contenedorFooter .footer-contenedor .formularioParaNewsletter .lbl-nombre:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #EBE5DB;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+footer .botonIrHaciaArriba {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #c9b09a;
+  border-radius: 50%;
+  bottom: 40px;
+  right: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  box-shadow: 3px 3px 3px 3px #1E1611;
+}
+footer .botonIrHaciaArriba a i {
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

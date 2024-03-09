@@ -1,0 +1,69 @@
+footer{
+    margin-top: auto;
+    .contenedorFooter{
+        .footer-contenedor{
+            color:$color-primario ;
+            display: inline;
+            a{
+                color:$color-primario ;
+                &:hover{
+                    color:$color-hover ;
+                }
+            }
+            .formularioParaNewsletter{
+                width: 100%;
+                height: 50px;
+                max-width: 400px;
+                position: relative;
+                overflow: hidden;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    color: #ffffff;
+                    padding-top: 20px;
+                    border: none;
+                    outline: 0px;
+                }
+                .lbl-nombre{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    border-bottom: 1px solid $color-primario;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -1px;
+                        width: 100%;
+                        height: 100%;
+                        border-bottom: 3px solid $color-primario;
+                        transform: translateX(-100%);
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+    .botonIrHaciaArriba{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background-color: $color-terciario;
+        border-radius: 50%;
+        bottom: 40px;
+        right: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 22px;
+        box-shadow: 3px 3px 3px 3px #1E1611;
+        a{
+            i{
+                padding-top: 15px;
+            }
+        }
+    }
+}
