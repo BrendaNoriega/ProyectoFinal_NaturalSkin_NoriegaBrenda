@@ -8,3 +8,12 @@
 @import './layout/footer.scss';
 
 //PAGINAS
+@import './paginas/inicio.scss';
+@import './paginas/sobre-nosotros.scss';
+@import './paginas/contacto.scss';
+@import './paginas/productos.scss';
+@import './paginas/producto-seleccionado.scss';
+@import './paginas/mi-cuenta.scss';
+
+//MEDIA-QUERY (MOBILE)
+@import './media-query/mobile.scss';

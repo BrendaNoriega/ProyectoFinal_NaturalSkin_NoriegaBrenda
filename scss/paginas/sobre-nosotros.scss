@@ -1,0 +1,125 @@
+.encabezadoSobreNosotros{
+    .apartadoIdentificadorSobreNosotros{
+        padding-top: 120px;
+        margin: auto;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-align: center;
+        padding: 40px 500px 40px 500px;
+    }
+}
+.sobreNosotros{
+    .nuestraHistoria{
+        .imagenSobreNosotros{
+            img{
+                width: 100%;
+                height: 800px;
+                object-fit: cover;
+                display: inline-block;
+            }
+        }
+        .historiaSobreLaMarca{
+            text-align: center;
+            margin: 100px 40px;
+            padding: 100px;
+            background-color: $color-secundario;
+            border-radius: 20px;
+            box-shadow:  20px 20px 39px #8f8e89,
+                        -20px -20px 39px #ffffff;
+            h2{
+                font-size: 36px;
+                font-weight: 700;
+                letter-spacing: 4px;
+                color: $color-primario;
+                padding: 20px 0px;
+            }
+            p{
+                color: $color-primario;
+                margin-bottom: 40px;
+                font-size: 20px;
+                letter-spacing: 2px;
+                padding: 0px 40px;
+            }
+        }
+    }
+}
+.visionYMisionDeLaMarca{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 40px;
+    .misionDeNaturalSkin{
+        color: $color-secundario;
+        height: 500px;
+        width: 500px;
+        padding: 100px 100px;
+        border-radius: 20px;
+        box-shadow:  20px 20px 39px #8f8e89,
+                    -20px -20px 39px #ffffff;
+        h2{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            margin: 40px 10px;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 40px 10px;
+        }
+    }
+    img{
+        height: 500px;
+        width: 500px;
+        object-fit: cover;
+        border-radius: 10%;
+        border-radius: 20px;
+        box-shadow:  20px 20px 39px #8f8e89,
+                    -20px -20px 39px #ffffff;
+    }
+    .visionDeNaturalSkin{
+        color: $color-secundario;
+        height: 500px;
+        width: 500px;
+        padding: 100px 100px;
+        border-radius: 20px;
+        box-shadow:  20px 20px 39px #8f8e89,
+                    -20px -20px 39px #ffffff;
+        h2{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            margin: 40px 10px;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 40px 10px;
+        }
+    }
+}
+.bannerFinalSobreNosotros{
+    img{
+        width: 100%;
+        height: 1200px;
+        object-fit: cover;
+        display: inline-block;
+    }
+    p{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        color: $color-primario;
+        background-color:$color-terciario;
+        padding: 60px;
+        margin-top: 25px;
+    }
+}

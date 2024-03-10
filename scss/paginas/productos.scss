@@ -1,0 +1,115 @@
+.apartadoIdentificadorProductos{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: $color-secundario;
+    margin-left: 40px;
+    padding-top: 120px;
+    text-align: center;
+}
+.apartadoDeBusquedas{
+    .contenedorDelBuscador{
+        margin: 40px 0px;
+        display: flex;
+        justify-content: center;
+        .buscador{
+            width: 100%;
+            max-width: 700px;
+            height: 60px;
+            background: $color-secundario;
+            opacity: 70%;
+            display: flex;
+            align-items: center;
+            border-radius: 60px;
+            padding: 10px 20px;
+            backdrop-filter: blur(4px) saturate(100%);
+            input{
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 24 20;
+                font-size: 20px;
+                color: $color-primario;
+                &::placeholder{
+                    color: $color-primario;
+                }
+            }
+            button{
+                border: 0;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                background: none;
+                cursor: pointer;
+                i{
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+.productos{
+    display: flex;
+    .listaDeProductos{
+        margin: 0px 40px 0px 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .contenedorDeProducto{
+            display: inline-block;
+            flex-wrap: wrap;
+            margin: 20px;
+            border-radius: 20px;
+            &:hover{
+                border-radius: 20px;
+                box-shadow:  20px 20px 39px #8f8e89,
+                        -20px -20px 39px #ffffff;
+            }
+            img{
+                width: 320px;
+                height: 340px;
+                object-fit: cover;
+                border-radius: 20px 20px 0px 0px;
+            }
+            div{
+                background-color: $color-secundario ;
+                border-radius:0px 0px 20px 20px;
+                color: $color-primario;
+            }
+            .informaciónDelProducto{
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                p{
+                    font-size: 25px;
+                    font-weight: 300;
+                }
+                .precio{
+                    font-size: 20px;
+                    font-weight: 500;
+                    span{
+                        font-size: 17px;
+                        font-weight: 300;
+                    }
+                }
+                button{
+                    background-color: $color-primario;
+                    color: $color-secundario;
+                    width: 250px;
+                    height: 35px;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: 17px;
+                    font-weight: 300;
+                    cursor: pointer;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
