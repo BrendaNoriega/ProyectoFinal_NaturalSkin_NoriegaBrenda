@@ -108,6 +108,9 @@ header .navbar .links li:hover .submenu {
   opacity: 1;
   margin-top: 18px;
 }
+header .navbar .links li a:hover {
+  color: #CE8523;
+}
 header .navbar .linksItems {
   display: flex;
   gap: 20px;

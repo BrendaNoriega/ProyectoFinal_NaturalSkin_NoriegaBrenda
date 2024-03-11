@@ -76,6 +76,11 @@ header{
                         margin-top: 18px;
                     }
                 }
+                a{
+                    &:hover{
+                        color: map-get($colores, hover);
+                    }
+                }
             }
             
         }
