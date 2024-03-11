@@ -270,7 +270,7 @@ footer .botonIrHaciaArriba a i {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 70vh;
+  height: 900px;
 }
 @media (max-width: 576px) {
   .banner {
@@ -283,7 +283,7 @@ footer .botonIrHaciaArriba a i {
 }
 .banner .contenedor .contenedor-banner {
   color: #EBE5DB;
-  padding-top: 300px;
+  padding-top: 350px;
   padding-left: 100px;
 }
 @media (max-width: 576px) {
