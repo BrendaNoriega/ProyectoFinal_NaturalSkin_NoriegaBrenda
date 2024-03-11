@@ -29,7 +29,7 @@
             text-align: center;
             margin: 100px 40px;
             padding: 100px;
-            background-color: $color-secundario;
+            background-color: map-get($colores, secundario);
             border-radius: 20px;
             box-shadow:  20px 20px 39px #8f8e89,
                         -20px -20px 39px #ffffff;
@@ -37,11 +37,11 @@
                 font-size: 36px;
                 font-weight: 700;
                 letter-spacing: 4px;
-                color: $color-primario;
+                color: map-get($colores, primario);
                 padding: 20px 0px;
             }
             p{
-                color: $color-primario;
+                color: map-get($colores, primario);
                 margin-bottom: 40px;
                 font-size: 20px;
                 letter-spacing: 2px;
@@ -55,7 +55,7 @@
     justify-content: space-between;
     margin: 100px 40px;
     .misionDeNaturalSkin{
-        color: $color-secundario;
+        color: map-get($colores, secundario);
         height: 500px;
         width: 500px;
         padding: 100px 100px;
@@ -85,7 +85,7 @@
                     -20px -20px 39px #ffffff;
     }
     .visionDeNaturalSkin{
-        color: $color-secundario;
+        color: map-get($colores, secundario);
         height: 500px;
         width: 500px;
         padding: 100px 100px;
@@ -117,8 +117,8 @@
         font-size: 40px;
         font-weight: 700;
         text-align: center;
-        color: $color-primario;
-        background-color:$color-terciario;
+        color: map-get($colores, primario);
+        background-color:map-get($colores, terciario);
         padding: 60px;
         margin-top: 25px;
     }

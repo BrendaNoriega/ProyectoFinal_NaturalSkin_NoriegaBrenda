@@ -1,13 +1,18 @@
 footer{
     margin-top: auto;
     .contenedorFooter{
+        background-color: map-get($colores, secundario);
+        padding: 40px 60px;
+        align-items:center;
+        display: flex;
+        justify-content:space-around;
         .footer-contenedor{
-            color:$color-primario ;
+            color:map-get($colores, primario) ;
             display: inline;
             a{
-                color:$color-primario ;
+                color:map-get($colores, primario) ;
                 &:hover{
-                    color:$color-hover ;
+                    color:map-get($colores, hover) ;
                 }
             }
             .formularioParaNewsletter{
@@ -32,7 +37,7 @@ footer{
                     width: 100%;
                     height: 100%;
                     pointer-events: none;
-                    border-bottom: 1px solid $color-primario;
+                    border-bottom: 1px solid map-get($colores, primario);
                     &:after{
                         content: '';
                         position: absolute;
@@ -40,7 +45,7 @@ footer{
                         bottom: -1px;
                         width: 100%;
                         height: 100%;
-                        border-bottom: 3px solid $color-primario;
+                        border-bottom: 3px solid map-get($colores, primario);
                         transform: translateX(-100%);
                         transition: all 0.3s ease;
                     }
@@ -52,7 +57,7 @@ footer{
         position: fixed;
         width: 50px;
         height: 50px;
-        background-color: $color-terciario;
+        background-color: map-get($colores, terciario);
         border-radius: 50%;
         bottom: 40px;
         right: 50px;

@@ -3,7 +3,7 @@
         font-size: 40px;
         font-weight: 700;
         letter-spacing: 4px;
-        color: $color-secundario;
+        color: map-get($colores, secundario);
         margin-left: 40px;
         padding-top: 120px;
         padding-bottom: 20px;

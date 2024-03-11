@@ -83,7 +83,7 @@
                 }
                 a{
                     background-color: 412F26;
-                    color: $color-primario;
+                    color: map-get($colores, primario);
                     padding: 10px 30px;
                     border-radius: 10px;
                 }
@@ -100,7 +100,7 @@
                 font-size: 20px;
                 margin-bottom: 20px;
                 padding: 20px;
-                background-color: $color-secundario;
+                background-color: map-get($colores, secundario);
                 opacity: 80%;
             }
             a{
@@ -133,7 +133,7 @@
                 }
                 a{
                     background-color: 412F26;
-                    color: $color-primario;
+                    color: map-get($colores, primario);
                     padding: 10px 30px;
                     border-radius: 10px;
                 } 

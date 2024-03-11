@@ -32,7 +32,7 @@
         .selectorDeCantidad{
             width: 300px;
             height: 60px;
-            background: $color-secundario;
+            background: map-get($colores, secundario);
             opacity: 70%;
             display: flex;
             align-items: center;
@@ -46,13 +46,13 @@
                 border: 0;
                 outline: none;
                 font-size: 20px;
-                color: $color-primario;
+                color: map-get($colores, primario);
                 text-align: center;
             }
         }
         button{
-            background-color: $color-secundario;
-            color: $color-primario;
+            background-color: map-get($colores, secundario);
+            color: map-get($colores, primario);
             width: 600px;
             height: 60px;
             border-radius: 10px;
