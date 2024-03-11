@@ -1,4 +1,9 @@
 .encabezadoSobreNosotros{
+    @include media-query-mobile() {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;                
+    }
     .apartadoIdentificadorSobreNosotros{
         padding-top: 120px;
         margin: auto;
@@ -6,6 +11,11 @@
         font-weight: 700;
         letter-spacing: 2px;
         text-align: center;
+        @include media-query-mobile() {
+            padding: 160px 0px 0px 0px;
+            text-align: center;
+            font-size: 28px;        
+        }
     }
     p{
         font-size: 20px;
@@ -13,6 +23,13 @@
         font-weight: 300;
         text-align: center;
         padding: 40px 500px 40px 500px;
+        @include media-query-mobile() {
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-align: center;
+            padding: 20px 20px;            
+        }
     }
 }
 .sobreNosotros{
@@ -23,6 +40,11 @@
                 height: 800px;
                 object-fit: cover;
                 display: inline-block;
+                @include media-query-mobile() {
+                    border-radius: 3%;
+                    padding: 0px 0px;
+                    height: 600px;
+                }
             }
         }
         .historiaSobreLaMarca{
@@ -33,12 +55,21 @@
             border-radius: 20px;
             box-shadow:  20px 20px 39px #8f8e89,
                         -20px -20px 39px #ffffff;
+            @include media-query-mobile() {
+                margin: 40px 20px;
+                padding: 20px;
+                        }
             h2{
                 font-size: 36px;
                 font-weight: 700;
                 letter-spacing: 4px;
                 color: map-get($colores, primario);
                 padding: 20px 0px;
+                @include media-query-mobile() {
+                    font-size: 20px;
+                    font-weight: 700;
+                    padding: 10px 0px;
+                }
             }
             p{
                 color: map-get($colores, primario);
@@ -46,6 +77,11 @@
                 font-size: 20px;
                 letter-spacing: 2px;
                 padding: 0px 40px;
+                @include media-query-mobile() {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    padding: 0px 20px;
+                }
             }
         }
     }
@@ -54,6 +90,13 @@
     display: flex;
     justify-content: space-between;
     margin: 100px 40px;
+    @include media-query-mobile() {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 20px;                
+    }
     .misionDeNaturalSkin{
         color: map-get($colores, secundario);
         height: 500px;
@@ -62,17 +105,32 @@
         border-radius: 20px;
         box-shadow:  20px 20px 39px #8f8e89,
                     -20px -20px 39px #ffffff;
+        @include media-query-mobile() {
+            height: 330px;
+            width: 330px;
+            border-radius: 10px;
+            padding: 20px 20px;
+            margin: 20px 0px;            
+        }
         h2{
             text-align: center;
             font-size: 40px;
             font-weight: 700;
             margin: 40px 10px;
+            @include media-query-mobile() {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 40px 10px;        
+            }
         }
         p{
             text-align: center;
             font-size: 20px;
             font-weight: 500;
             margin: 40px 10px;
+            @include media-query-mobile() {
+                font-size: 20px;        
+            }
         }
     }
     img{
@@ -83,6 +141,11 @@
         border-radius: 20px;
         box-shadow:  20px 20px 39px #8f8e89,
                     -20px -20px 39px #ffffff;
+        @include media-query-mobile() {
+            height: 330px;
+            width: 330px;
+            margin: 20px 0px;            
+        }
     }
     .visionDeNaturalSkin{
         color: map-get($colores, secundario);
@@ -92,17 +155,32 @@
         border-radius: 20px;
         box-shadow:  20px 20px 39px #8f8e89,
                     -20px -20px 39px #ffffff;
+        @include media-query-mobile() {
+            height: 330px;
+            width: 330px;
+            border-radius: 10px;
+            padding: 20px 20px;
+            margin: 20px 0px;
+        }
         h2{
             text-align: center;
             font-size: 40px;
             font-weight: 700;
             margin: 40px 10px;
+            @include media-query-mobile() {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 40px 10px;
+            }
         }
         p{
             text-align: center;
             font-size: 20px;
             font-weight: 500;
             margin: 40px 10px;
+            @include media-query-mobile() {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -112,6 +190,10 @@
         height: 1200px;
         object-fit: cover;
         display: inline-block;
+        @include media-query-mobile() {
+            padding: 0px 0px;
+            height: 600px;
+        }
     }
     p{
         font-size: 40px;
@@ -121,5 +203,10 @@
         background-color:map-get($colores, terciario);
         padding: 60px;
         margin-top: 25px;
+        @include media-query-mobile() {
+            font-size: 24px;
+            padding: 20px;
+            margin-top: 26px;
+        }
     }
 }

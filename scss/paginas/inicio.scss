@@ -4,32 +4,63 @@
     background-size: cover;
     width: 100%;
     height: 70vh;
+    @include media-query-mobile() {
+        background-image: url(../recursos/imagenes/Masajeador-Accesorio.jpg);
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+        text-align: center;
+    }
     .contenedor{
         .contenedor-banner{
             color: map-get($colores, primario);
             padding-top: 300px;
             padding-left: 100px;
+            @include media-query-mobile() {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 50px 40px 50px;
+            }
             span{
                 font-size: 30px;
                 font-weight: 500;
                 letter-spacing: 4px;
+                @include media-query-mobile() {
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                }
             }
             h1{
                 margin-bottom: 10px;
                 font-size: 60px;
                 font-weight: 680;
                 letter-spacing: 4px;
+                @include media-query-mobile() {
+                    margin-bottom: 4px;
+                    font-size: 28px;
+                }
             }
             p{
                 margin-bottom: 40px;
                 font-size: 18px;
                 letter-spacing: 2px;
+                @include media-query-mobile() {
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
             }
             a{
                 background-color: map-get($colores, primario);
                 color: map-get($colores, secundario);
                 padding: 10px 30px;
                 border-radius: 10px;
+                @include media-query-mobile() {
+                    padding: 10px 30px;
+                    border-radius: 5px;
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -38,28 +69,49 @@
     .tonicoALaVenta{
         margin: 20px;
         display: flex;
+        @include media-query-mobile() {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
         .imagenProductoALaVenta1{
             img{
                 padding: 20 20;
                 border-radius: 5%;
                 width: 1000px;
                 height: 800px;
+                @include media-query-mobile() {
+                    padding: 10px;
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
             }
         }
         .indicacionesDelProductoALaVenta1{
             padding: 300px 150px 300px 150px;
             text-align: center;
+            @include media-query-mobile() {
+                padding: 40px 20px 40px 20px; 
+            }
             h2{
                 font-size: 40px;
                 font-weight: 500;
                 letter-spacing: 4px;
                 color: map-get($colores, secundario);
+                @include media-query-mobile() {
+                    font-size: 20px;
+                }
             }
             p{
                 color: map-get($colores, secundario);
                 margin-bottom: 40px;
                 font-size: 18px;
                 letter-spacing: 2px;
+                @include media-query-mobile() {
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
             }
 
             a{
@@ -67,6 +119,12 @@
                 color: map-get($colores, primario);
                 padding: 10px 30px;
                 border-radius: 10px;
+                @include media-query-mobile() {
+                    background-color: map-get($colores, secundario);
+                    color: map-get($colores, primario);
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                }
             }
         }
     }
@@ -81,18 +139,35 @@
         padding-left: 650px;
         width: 100%;
         height: 100vh;
+        @include media-query-mobile() {
+            background-image: url(../recursos/imagenes/Mision-Vision-NaturalSkin.jpg);
+            text-align: center;
+            padding: 400px 0px 50px 0px;
+            height: 70vh;
+        }
         h2{
             font-size: 60px;
             font-weight: 680;
             letter-spacing: 4px;
             color: map-get($colores, primario);
             margin-bottom: 60px;
+            @include media-query-mobile() {
+                font-size: 20px;
+                margin-bottom: 20px;
+                padding: 20px;
+                background-color: map-get($colores, secundario);
+                opacity: 80%;
+            }
         }
         a{
             background-color: map-get($colores, primario);
             color: map-get($colores, secundario);
             padding: 10px 30px;
             border-radius: 10px;
+            @include media-query-mobile() {
+                padding: 10px 30px;
+                border-radius: 10px;
+            }
         }
     }
 }
@@ -101,34 +176,61 @@
         margin: 20px;
         display: flex;
         flex-direction: row-reverse;
+        @include media-query-mobile() {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
         .imagenProductoALaVenta2{
             img{
                 padding: 20px;
                 border-radius: 5%;
                 width: 1000px;
                 height: 800px;
+                @include media-query-mobile() {
+                    padding: 10px;
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
             }
         }
         .indicacionesDelProductoALaVenta2{
             padding: 300px 150px 300px 150px;
             text-align: center;
+            @include media-query-mobile() {
+                padding: 40px 20px 40px 20px; 
+            }
             h2{
                 font-size: 40px;
                 font-weight: 500;
                 letter-spacing: 4px;
                 color: map-get($colores, secundario);
+                @include media-query-mobile() {
+                    font-size: 20px;
+                }
             }
             p{
                 color: map-get($colores, secundario);
                 margin-bottom: 40px;
                 font-size: 18px;
                 letter-spacing: 2px;
+                @include media-query-mobile() {
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
             }
             a{
                 background-color: map-get($colores, secundario);
                 color: map-get($colores, primario);
                 padding: 10px 30px;
                 border-radius: 10px;
+                @include media-query-mobile() {
+                    background-color: map-get($colores, secundario);
+                    color: map-get($colores, primario);
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                }
             }
         }
     }
@@ -136,11 +238,17 @@
 .promociónDeInstagram{
     text-align: center;
     padding-top: 20px;
+    @include media-query-mobile() {
+        padding-top: 10px;
+    }
     h2{
         font-size: 40px;
         font-weight: 500;
         letter-spacing: 4px;
         color: map-get($colores, secundario);
+        @include media-query-mobile() {
+            font-size: 20px;
+        }
     }
     a{
         background-color: map-get($colores, secundario);
@@ -150,11 +258,20 @@
         font-weight: 200;
         letter-spacing: 4px;
         padding: 10px 40px;
+        @include media-query-mobile() {
+            font-size: 16px;
+            padding: 5px 20px;
+        }
     }
 }
 .imagenesDeinstagram{
     display: flex;
     justify-content: center;
+    @include media-query-mobile() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     img{
         width: 400px;
         height: 600px;
@@ -162,5 +279,11 @@
         margin: 20 90;
         display: block;
         object-fit: cover;
+        @include media-query-mobile() {
+            width: 100%;
+            height: 600px;
+            margin: 10px 10px;
+            padding: 20px;
+        }
     }
 }

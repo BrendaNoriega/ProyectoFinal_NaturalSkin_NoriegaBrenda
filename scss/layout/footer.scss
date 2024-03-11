@@ -6,9 +6,20 @@ footer{
         align-items:center;
         display: flex;
         justify-content:space-around;
+        @include media-query-mobile() {
+            align-items:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%; 
+        }
         .footer-contenedor{
             color:map-get($colores, primario) ;
             display: inline;
+            @include media-query-mobile(){
+                align-items: center;
+                margin: 20px;
+            }
             a{
                 color:map-get($colores, primario) ;
                 &:hover{
@@ -65,9 +76,20 @@ footer{
         line-height: 50px;
         font-size: 22px;
         box-shadow: 3px 3px 3px 3px #1E1611;
+        @include media-query-mobile() {
+            width: 40px;
+            height: 40px;
+            bottom: 50px;
+            right: 35px;
+            line-height: 30px;
+            font-size: 16px;
+        }
         a{
             i{
                 padding-top: 15px;
+                @include media-query-mobile() {
+                    padding-top: 12px;
+                }
             }
         }
     }

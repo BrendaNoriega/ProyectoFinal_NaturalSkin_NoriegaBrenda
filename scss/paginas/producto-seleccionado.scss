@@ -1,20 +1,46 @@
 .productoSeleccionado{
     display: flex;
+    @include media-query-mobile() {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     img{
         width: 1000px;
         height: 1200px;
         object-fit: cover;
         border-radius: 40px;
         margin: 100px 40px 40px 40px;
+        @include media-query-mobile() {
+            width: 100%;
+            height: 70vh;
+            margin: 160px 40px 0px 0px;
+            padding: 10px;
+        }
     }
     .informaciónDelProductoSeleccionado{
         padding-top: 150px;
         margin: 40px;
+        @include media-query-mobile() {
+            padding-top: 0px;
+            margin: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;                
+        }
         h1{
             font-size: 60px;
             font-weight: 500;
             letter-spacing: 10px;
             margin: 20px 0px;
+            @include media-query-mobile() {
+                font-size: 28px;
+                font-weight: 700;
+                letter-spacing: 4px;
+                margin: 10px 0px;           
+            }
         }
         h2{
             font-size: 20px;
@@ -22,12 +48,20 @@
             letter-spacing: 2px;
             margin: 20px 0px;
             opacity: 70%;
+            @include media-query-mobile() {
+                font-size: 16px;
+                margin: 10px 0px; 
+            }
         }
         p{
             font-size: 20px;
             font-weight: 300;
             letter-spacing: 2px;
             margin: 20px 0px;
+            @include media-query-mobile() {
+                font-size: 18px;
+                margin: 10px 0px;
+            }
         }
         .selectorDeCantidad{
             width: 300px;
@@ -40,6 +74,14 @@
             padding: 10px 20px;
             backdrop-filter: blur(4px) saturate(100%);
             margin: 20px 0px;
+            @include media-query-mobile() {
+                width: 300px;
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 10px;
+                margin: 10px 18px;
+            }
             input{
                 background: transparent;
                 flex: 1;
@@ -48,6 +90,9 @@
                 font-size: 20px;
                 color: map-get($colores, primario);
                 text-align: center;
+                @include media-query-mobile() {
+                    font-size: 16px;
+                }
             }
         }
         button{
@@ -62,12 +107,21 @@
             cursor: pointer;
             align-items: center;
             margin: 20px 0px;
+            @include media-query-mobile() {
+                width: 350px;
+                height: 60px;
+                font-size: 18px;
+            }
         }
         h4{
             font-size: 20px;
             font-weight: 700;
             letter-spacing: 2px;
             margin: 20px 0px;
+            @include media-query-mobile() {
+                font-size: 18px;
+                margin: 10px 0px;
+            }
         }
         li{
             ul{
@@ -75,6 +129,10 @@
                 font-weight: 500;
                 letter-spacing: 2px;
                 margin: 20px 0px;
+                @include media-query-mobile() {
+                    font-size: 16px;
+                    margin: 10px 0px;
+                }
             }
         }
 

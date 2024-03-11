@@ -12,6 +12,10 @@ header{
             text-align: center;
             color: map-get($colores, primario);
             margin: 0px;
+            @include media-query-mobile() {
+                font-size: 12px;
+                padding: 15px 20px;
+            }
         }
     }
     .navbar{
@@ -22,11 +26,18 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include media-query-mobile() {
+            font-size: 12px;
+            padding: 15px 20px;
+        }
         .logo{
             a{
                 font-size: 28px;
                 font-weight: 500;
                 padding: 0px;
+                @include media-query-mobile() {
+                    font-size: 18px;
+                }
             }
         }
         .links{
@@ -34,6 +45,9 @@ header{
             gap: 20px;
             padding: 0px;
             margin: 0px;
+            @include media-query-mobile() {
+                display: none;
+            }
             .submenu{
                 position: absolute;
                 width: 300px;
@@ -70,6 +84,9 @@ header{
             gap: 20px;
             padding: 0px;
             margin: 0px;
+            @include media-query-mobile() {
+                display: none;
+            }
             a{
                 &:hover{
                     color: map-get($colores, hover);
@@ -81,6 +98,9 @@ header{
             font-size: 20px;
             cursor: pointer;
             display: none;
+            @include media-query-mobile() {
+                display: block;
+            }
         }
     }
     .dropdown_menu{
@@ -96,6 +116,9 @@ header{
         border-radius: 0px 0px 10px 10px;
         overflow: hidden;
         transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        @include media-query-mobile() {
+            display: block;
+        }
         li{
             padding: 10px;
             display: flex;
