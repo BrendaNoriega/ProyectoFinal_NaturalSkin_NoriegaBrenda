@@ -127,12 +127,12 @@ header{
             align-items: center;
             justify-content: center;
         }
-        .open{
-            height: 300px;
-        }
         @include media-query-mobile() {
             display: block;
         }
         
+    }
+    .dropdown_menu.open{
+        height: 300px;
     }
 }

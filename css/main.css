@@ -156,13 +156,13 @@ header .dropdown_menu li {
   align-items: center;
   justify-content: center;
 }
-header .dropdown_menu .open {
-  height: 300px;
-}
 @media (max-width: 576px) {
   header .dropdown_menu {
     display: block;
   }
+}
+header .dropdown_menu.open {
+  height: 300px;
 }
 
 footer {
@@ -282,6 +282,7 @@ footer .botonIrHaciaArriba a i {
     justify-content: center;
     align-items: flex-end;
     text-align: center;
+    height: 700px;
   }
 }
 .banner .contenedor .contenedor-banner {
