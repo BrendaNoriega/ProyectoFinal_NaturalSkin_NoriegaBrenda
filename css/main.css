@@ -148,7 +148,7 @@ header .dropdown_menu {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 0px 0px 10px 10px;
   overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 header .dropdown_menu li {
   padding: 10px;
