@@ -58,8 +58,8 @@ header .navbar {
 }
 @media (max-width: 576px) {
   header .navbar {
-    font-size: 12px;
-    padding: 15px 20px;
+    box-shadow: 0px 0px 15px 0px #000000;
+    z-index: 1000000;
   }
 }
 header .navbar .logo a {
@@ -150,11 +150,6 @@ header .dropdown_menu {
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-@media (max-width: 576px) {
-  header .dropdown_menu {
-    display: block;
-  }
-}
 header .dropdown_menu li {
   padding: 10px;
   display: flex;
@@ -163,6 +158,11 @@ header .dropdown_menu li {
 }
 header .dropdown_menu .open {
   height: 300px;
+}
+@media (max-width: 576px) {
+  header .dropdown_menu {
+    display: block;
+  }
 }
 
 footer {

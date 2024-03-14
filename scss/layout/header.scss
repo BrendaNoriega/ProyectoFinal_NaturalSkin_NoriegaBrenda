@@ -27,8 +27,8 @@ header{
         align-items: center;
         justify-content: space-between;
         @include media-query-mobile() {
-            font-size: 12px;
-            padding: 15px 20px;
+            box-shadow: 0px 0px 15px 0px #000000;
+            z-index: 1000000;
         }
         .logo{
             a{
@@ -121,9 +121,6 @@ header{
         border-radius: 0px 0px 10px 10px;
         overflow: hidden;
         transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        @include media-query-mobile() {
-            display: block;
-        }
         li{
             padding: 10px;
             display: flex;
@@ -133,5 +130,9 @@ header{
         .open{
             height: 300px;
         }
+        @include media-query-mobile() {
+            display: block;
+        }
+        
     }
 }
