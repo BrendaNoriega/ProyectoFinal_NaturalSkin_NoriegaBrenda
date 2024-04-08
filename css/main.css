@@ -420,14 +420,14 @@ footer .botonIrHaciaArriba a i {
 }
 
 .apartadoSobreNosotros .contenedorConocenos {
-  background-image: url(../recursos/imagenes/Sección-SobreNosotros.jpg);
+  background-image: url(../recursos/imagenes/BannerFinal-SobreNosotros.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding-top: 400px;
   padding-left: 650px;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 @media (max-width: 576px) {
   .apartadoSobreNosotros .contenedorConocenos {

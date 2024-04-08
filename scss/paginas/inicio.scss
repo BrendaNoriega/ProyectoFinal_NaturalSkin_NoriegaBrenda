@@ -132,14 +132,14 @@
 }
 .apartadoSobreNosotros{
     .contenedorConocenos{
-        background-image: url(../recursos/imagenes/Sección-SobreNosotros.jpg);
+        background-image: url(../recursos/imagenes/BannerFinal-SobreNosotros.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
         padding-top: 400px;
         padding-left: 650px;
         width: 100%;
-        height: 80vh;
+        height: 90vh;
         @include media-query-mobile() {
             background-image: url(../recursos/imagenes/Mision-Vision-NaturalSkin.jpg);
             text-align: center;
